@@ -10,5 +10,7 @@ public class Main {
 
 
         System.out.println("Nu är vi igång");
+        System.out.println("So that's how it works");
+
     }
 }
