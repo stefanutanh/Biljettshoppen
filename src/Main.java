@@ -6,5 +6,8 @@ public class Main {
         System.out.println("WillDe was here");
         
         
+
+
+        System.out.println("Nu är vi igång");
     }
 }
