@@ -8,7 +8,7 @@ public class testbiljettGUI {
         frameObj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frameObj.setSize(600,400);
         frameObj.setVisible(true);
-    }
+    }//END MAIN
 
     private JPanel mainPanel;
     private JCheckBox hus1CheckBox;
@@ -24,6 +24,15 @@ public class testbiljettGUI {
     private JButton beställButton;
 
     public testbiljettGUI() {
+        beställButton.addActionListener(e -> {
+            boolean hus1Vald = hus1CheckBox.isSelected();
+            boolean kortBetalning = kortCheckBox.isSelected();
+            String eventTid = (String) comboBox1.getSelectedItem();
 
+            if (hus1Vald && kortBetalning) {
+                JOptionPane.showMessageDialog(mainPanel, "Du valde hus 1 och betalning med kort vid " + eventTid);
+            }
+        });
     }
+
 }
