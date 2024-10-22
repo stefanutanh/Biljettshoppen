@@ -32,7 +32,7 @@ public class testbiljettGUI {
             int numTickets = Integer.parseInt((String) comboBoxNumberTickets.getSelectedItem());
 
 
-            JOptionPane.showMessageDialog(mainPanel, "Du har beställt " + numTickets + " biljett(er) till rad " + row + ", plats " + seat + " i " +building +"\nStämmer det?");
+            JOptionPane.showMessageDialog(mainPanel, "Du har beställt " + numTickets + " biljett(er) till rad " + row + ", plats " + seat + " i " +building + " kl " +timeEvent + "\nStämmer det?");
         });
 
     }
