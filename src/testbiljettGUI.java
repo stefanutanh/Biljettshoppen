@@ -11,28 +11,30 @@ public class testbiljettGUI {
     }//END MAIN
 
     private JPanel mainPanel;
-    private JCheckBox hus1CheckBox;
-    private JCheckBox a1000CheckBox;
-    private JCheckBox a1800CheckBox;
-    private JCheckBox hus2CheckBox;
-    private JCheckBox a1500CheckBox;
-    private JComboBox comboBox1;
-    private JComboBox comboBox2;
-    private JComboBox comboBox3;
+    private JComboBox comboBoxRow;
+    private JComboBox comboBoxSeat;
+    private JComboBox comboBoxNumberTickets;
     private JCheckBox kortCheckBox;
-    private JCheckBox fakturaCheckBox;
     private JButton beställButton;
+    private JComboBox<String> comboBoxTimeEvent;
+    private JComboBox<String> comboBoxByggnad;
+    private JComboBox comboBoxPaymentOptions;
 
     public testbiljettGUI() {
-        beställButton.addActionListener(e -> {
-            boolean hus1Vald = hus1CheckBox.isSelected();
-            boolean kortBetalning = kortCheckBox.isSelected();
-            String eventTid = (String) comboBox1.getSelectedItem();
 
-            if (hus1Vald && kortBetalning) {
-                JOptionPane.showMessageDialog(mainPanel, "Du valde hus 1 och betalning med kort vid " + eventTid);
-            }
+        beställButton.addActionListener(e -> {
+            String building = (String) comboBoxByggnad.getSelectedItem();
+            String row = (String) comboBoxRow.getSelectedItem();
+            String seat = (String) comboBoxSeat.getSelectedItem();
+            String numberTickets = (String) comboBoxNumberTickets.getSelectedItem();
+            String timeEvent = (String) comboBoxTimeEvent.getSelectedItem();
+            String paymentOptions = (String) comboBoxPaymentOptions.getSelectedItem();
+            int numTickets = Integer.parseInt((String) comboBoxNumberTickets.getSelectedItem());
+
+
+            JOptionPane.showMessageDialog(mainPanel, "Du har beställt " + numTickets + " biljett(er) till rad " + row + ", plats " + seat + " i " +building +"\nStämmer det?");
         });
+
     }
 
 }
