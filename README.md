@@ -23,5 +23,7 @@ User stories
 
 6. Administratören ska kunna lägga till nya evenemang så att användare kan köpa biljetter till uppkommande evenemang.
    Administratören ska kunna skapa ett evenemang med datum, tid och antal biljetter.
+7. Jag vill som användare kunna se mina bokade biljetter.
+   Användaren ska ha tillgång till "Mina biljetter"-sida där alla bokade biljetter visas med tid/datum/plats. Biljetten ska kunna laddas ner eller visas för utskrift.
 
 Use cases
