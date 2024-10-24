@@ -27,3 +27,11 @@ User stories
    Användaren ska ha tillgång till "Mina biljetter"-sida där alla bokade biljetter visas med tid/datum/plats. Biljetten ska kunna laddas ner eller visas för utskrift.
 
 Use cases
+
+1. Boka biljetter
+   Beskrivning: Kunden väljer platser och bokar biljetter.
+   Steg;
+   1. Kunden väljer max 5 platser.
+   2. Systemet reserverar platserna och startar en timer på 10 minuter.
+   3. Kunden bekräftar bokning och väljer en betalningsmetod (antingen direktbetalning eller faktura).
+   4. Betalningen bekräftas om bokningen sker inom tidsgränsen på 10 minuter. Annars avbryts bokningen om tiden går ut utan betalning.
