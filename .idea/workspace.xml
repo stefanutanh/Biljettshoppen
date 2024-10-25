@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="39841d0d-5f06-43de-834a-64fb7567e0b6" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/Event.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Sittplats.java" afterDir="false" />
@@ -12,6 +13,9 @@
       <change beforePath="$PROJECT_DIR$/src/Faktura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Faktura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="39841d0d-5f06-43de-834a-64fb7567e0b6" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +56,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< Updated upstream
     "Application.Main.executor": "Run",
+=======
+    "Application.Main.executor": "Debug",
+>>>>>>> Stashed changes
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Katarina",
     "ignore.virus.scanning.warn.message": "true",
@@ -82,7 +90,11 @@
       <option name="presentableId" value="Default" />
       <updated>1729158819448</updated>
       <workItem from="1729158820497" duration="1303000" />
+<<<<<<< Updated upstream
       <workItem from="1729847008615" duration="6788000" />
+=======
+      <workItem from="1729846232150" duration="125000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
