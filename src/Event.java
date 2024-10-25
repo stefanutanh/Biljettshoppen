@@ -1,42 +1,45 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Event {
-    private String date;
-    private String time;
-    private List<Sittplats> sittplats;
-    private int maxTicketsPerPerson = 5;
+    private String name;
+    private LocalDateTime releaseDateTime;
+    private BuildingType buildingType;
+    private Map<String, Seat> seats;
+    private int totalSeats;
 
-    public Event(String date, String time, int numberOfSeats) {
-        this.date = date;
-        this.time = time;
-        this.sittplats = new ArrayList<Sittplats>();
-        for (int i = 0; i < numberOfSeats; i++) {
-            String seatType = (i % 2 == 0) ? "fällstol" : "bänk";
-            sittplats.add(new Sittplats(seatType));
-        }
-    }
-    public boolean bookSeats(int numberOfSeats) {
-        if (numberOfSeats > maxTicketsPerPerson) {
-            return false; //Max 5 biljetter per person
-        }
-        int bookedSeats = 0;
-        for (Sittplats sittplatser : sittplats) {
-            if (!sittplatser.isBooked()) {
-                sittplatser.book();
-                bookedSeats++;
-                if (bookedSeats == numberOfSeats) {
-                    return true;
-                }
-            }
-        }
-        return false;
+    public Event(String name, LocalDateTime releaseDateTime, BuildingType buildingType, int totalSeats) {
+        this.name = name;
+        this.releaseDateTime = releaseDateTime;
+        this.buildingType = buildingType;
+        this.totalSeats = totalSeats;
+        this.seats = new HashMap<>();
+        initializeSeats();
     }
 
-    public void displaySeats() {
-        for (Sittplats sittplatser : sittplats) {
-            System.out.print(sittplatser.isBooked() ? "X " : "O");
+    private void initializeSeats() {
+        for (int i = 1; i <= totalSeats; i++) {
+            SeatType type = i % 2 == 0 ? SeatType.FOLDING_CHAIR : SeatType.BENCH;
+            seats.put("SEAT-" + i, new Seat("SEAT-" + i, type));
         }
-        System.out.println();
     }
+
+    public boolean isSeatAvailable(String seatId) {
+        return seats.containsKey(seatId) && !seats.get(seatId).isBooked();
+    }
+
+    public Map<String, Seat> getSeatsMap() {
+        return new HashMap<>(seats);
+    }
+
+    public boolean isTicketReleased() {
+        return LocalDateTime.now().isAfter(releaseDateTime);
+    }
+
+    // Getters
+    public String getName() { return name; }
+    public LocalDateTime getReleaseDateTime() { return releaseDateTime; }
+    public BuildingType getBuildingType() { return buildingType; }
+    public int getTotalSeats() { return totalSeats; }
 }

@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class testbiljettGUI {
 
@@ -19,6 +21,7 @@ public class testbiljettGUI {
     private JComboBox<String> comboBoxTimeEvent;
     private JComboBox<String> comboBoxByggnad;
     private JComboBox comboBoxPaymentOptions;
+    private JButton AdminBTN;
 
     public testbiljettGUI() {
 
@@ -34,7 +37,6 @@ public class testbiljettGUI {
 
             JOptionPane.showMessageDialog(mainPanel, "Du har beställt " + numTickets + " biljett(er) till rad " + row + ", plats " + seat + " i " +building + " kl " +timeEvent + "\nStämmer det?");
         });
-
     }
 
 }
