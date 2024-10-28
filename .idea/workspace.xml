@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39841d0d-5f06-43de-834a-64fb7567e0b6" name="Changes" comment="">
+    <list default="true" id="39841d0d-5f06-43de-834a-64fb7567e0b6" name="Changes" comment="DFDS">
+      <change afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookingManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookingSystemUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DirectPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventBookingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventBookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InvoicePayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PaymentProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BuildingType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Seat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeatType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sittplats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicketSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,21 +34,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "stefanutanh"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;stefanutanh&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/stefanutanh/Biljettshoppen.git",
-    "accountId": "0c5fe682-8c2b-4985-9cd1-60483c7b36fd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/stefanutanh/Biljettshoppen.git&quot;,
+    &quot;accountId&quot;: &quot;0c5fe682-8c2b-4985-9cd1-60483c7b36fd&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2nYnL4ymm8smwOtIYCiTWMwuGU1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,6 +64,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/rezal/IdeaProjects/andra året/Biljettshoppen",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +73,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rezal\IdeaProjects\andra året\Biljettshoppen\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,9 +99,41 @@
       <updated>1729158819448</updated>
       <workItem from="1729158820497" duration="1303000" />
     </task>
+    <task id="LOCAL-00001" summary="DFDS">
+      <option name="closed" value="true" />
+      <created>1729855954733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729855954733</updated>
+    </task>
+    <task id="LOCAL-00002" summary="DFDS">
+      <option name="closed" value="true" />
+      <created>1729856427299</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729856427299</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DFDS" />
+    <option name="LAST_COMMIT_MESSAGE" value="DFDS" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/testbiljettGUI.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

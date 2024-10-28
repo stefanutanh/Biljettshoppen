@@ -1,45 +1,35 @@
-import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Map;
-
-public class Event {
+class Event {
+    private int id;
     private String name;
-    private LocalDateTime releaseDateTime;
-    private BuildingType buildingType;
-    private Map<String, Seat> seats;
+    private String building;  // "WOOD" or "BRICK"
     private int totalSeats;
+    private int availableSeats;
+    private double price;
+    private boolean isActive;
 
-    public Event(String name, LocalDateTime releaseDateTime, BuildingType buildingType, int totalSeats) {
+    // Constructor
+    public Event(int id, String name, String building, int totalSeats, double price) {
+        this.id = id;
         this.name = name;
-        this.releaseDateTime = releaseDateTime;
-        this.buildingType = buildingType;
+        this.building = building;
         this.totalSeats = totalSeats;
-        this.seats = new HashMap<>();
-        initializeSeats();
+        this.availableSeats = totalSeats;
+        this.price = price;
+        this.isActive = true;
     }
 
-    private void initializeSeats() {
-        for (int i = 1; i <= totalSeats; i++) {
-            SeatType type = i % 2 == 0 ? SeatType.FOLDING_CHAIR : SeatType.BENCH;
-            seats.put("SEAT-" + i, new Seat("SEAT-" + i, type));
-        }
-    }
-
-    public boolean isSeatAvailable(String seatId) {
-        return seats.containsKey(seatId) && !seats.get(seatId).isBooked();
-    }
-
-    public Map<String, Seat> getSeatsMap() {
-        return new HashMap<>(seats);
-    }
-
-    public boolean isTicketReleased() {
-        return LocalDateTime.now().isAfter(releaseDateTime);
-    }
-
-    // Getters
+    // Getters and setters
+    public int getId() { return id; }
     public String getName() { return name; }
-    public LocalDateTime getReleaseDateTime() { return releaseDateTime; }
-    public BuildingType getBuildingType() { return buildingType; }
-    public int getTotalSeats() { return totalSeats; }
+    public int getAvailableSeats() { return availableSeats; }
+    public double getPrice() { return price; }
+    public boolean isActive() { return isActive; }
+
+    public void setAvailableSeats(int seats) {
+        this.availableSeats = seats;
+    }
+
+    public void setActive(boolean active) {
+        this.isActive = active;
+    }
 }

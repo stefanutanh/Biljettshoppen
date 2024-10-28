@@ -1,51 +1,40 @@
 import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Map;
 
-public class Booking {
-    private String userId;
-    private Event event;
-    private Map<String, Seat> bookedSeats;
-    private PaymentMethod paymentMethod;
-    private LocalDateTime bookingTime;
+class Booking {
+    private int id;
+    private int eventId;
+    private String customerName;
+    private int numberOfSeats;
+    private String seatType;  // "BENCH" or "FOLDABLE"
     private boolean isPaid;
+    private LocalDateTime bookingTime;
 
-    public Booking(String userId, Event event) {
-        this.userId = userId;
-        this.event = event;
-        this.bookedSeats = new HashMap<>();
-        this.bookingTime = LocalDateTime.now();
+    public Booking(int id, int eventId, String customerName, int numberOfSeats, String seatType) {
+        this.id = id;
+        this.eventId = eventId;
+        this.customerName = customerName;
+        this.numberOfSeats = numberOfSeats;
+        this.seatType = seatType;
         this.isPaid = false;
+        this.bookingTime = LocalDateTime.now();
     }
 
-    public boolean addSeat(String seatId) {
-        if (bookedSeats.size() >= 5) {
-            return false; // Max 5 biljetter per person
-        }
+    // Getters
+    public int getId() { return id; }
+    public int getEventId() { return eventId; }
+    public int getNumberOfSeats() { return numberOfSeats; }
+    public boolean isPaid() { return isPaid; }
+    public LocalDateTime getBookingTime() { return bookingTime; }
 
-        if (event.isSeatAvailable(seatId)) {
-            Seat seat = event.getSeatsMap().get(seatId);
-            seat.book(userId);
-            bookedSeats.put(seatId, seat);
-            return true;
-        }
-        return false;
+    public void setPaid(boolean paid) {
+        this.isPaid = paid;
+    }
+    public String getCustomerName() {
+        return customerName;
+    }
+    public String getSeatType() {
+        return seatType;
     }
 
-    public void setPaymentMethod(PaymentMethod method) {
-        this.paymentMethod = method;
-    }
 
-    public boolean isExpired() {
-        return LocalDateTime.now().isAfter(bookingTime.plusMinutes(10));
-    }
-
-    public void completePayment() {
-        this.isPaid = true;
-    }
-
-    public void cancelBooking() {
-        bookedSeats.values().forEach(Seat::clearBooking);
-        bookedSeats.clear();
-    }
 }
