@@ -23,7 +23,8 @@ User stories
 
 6. Administratören ska kunna lägga till nya evenemang så att användare kan köpa biljetter till uppkommande evenemang.
    Administratören ska kunna skapa ett evenemang med datum, tid och antal biljetter.
-7. Jag vill som användare kunna se mina bokade biljetter.
+   
+8. Jag vill som användare kunna se mina bokade biljetter.
    Användaren ska ha tillgång till "Mina biljetter"-sida där alla bokade biljetter visas med tid/datum/plats. Biljetten ska kunna laddas ner eller visas för utskrift.
 
 Use cases
@@ -35,3 +36,17 @@ Use cases
    2. Systemet reserverar platserna och startar en timer på 10 minuter.
    3. Kunden bekräftar bokning och väljer en betalningsmetod (antingen direktbetalning eller faktura).
    4. Betalningen bekräftas om bokningen sker inom tidsgränsen på 10 minuter. Annars avbryts bokningen om tiden går ut utan betalning.
+  
+2. Visa lediga platser
+   Beskrivning: Kunden vill kunna se vilka lediga platser som finns.
+   Steg;
+   1. Kunden navigerar till evenemangssidan.
+   2. Systemet visar en plan som visar vilka platser som är lediga och upptagna.
+   3. Kunden kan klicka på en ledig plats för att boka den.
+  
+3. Lägga till ett event
+   Beskrivning: En administratör ska kunna lägga till ett event.
+   Steg;
+   1. Administratören loggar in med admin-login.
+   2. Administratören fyller i evenemangets namn, tid, plats och antal biljetter.
+   3. Systemet lägger till evenemanget i listan över bokningsbara evenemang.
