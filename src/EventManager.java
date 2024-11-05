@@ -5,4 +5,4 @@ interface EventManager {
     void removeEvent(int eventId);
     void updateEvent(Event event);
     List<Event> getAllEvents();
-}
+

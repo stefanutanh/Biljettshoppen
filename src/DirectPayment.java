@@ -5,4 +5,4 @@ class DirectPayment implements PaymentProcessor {
         booking.setPaid(true);
         return true;
     }
-}
+
