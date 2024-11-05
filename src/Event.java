@@ -1,7 +1,7 @@
 class Event {
     private int id;
     private String name;
-    private String building;  // "WOOD" or "BRICK"
+    private String building;  // "WOOD" eller "BRICK"
     private int totalSeats;
     private int availableSeats;
     private double price;

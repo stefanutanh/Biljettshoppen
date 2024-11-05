@@ -6,5 +6,3 @@ interface EventManager {
     void updateEvent(Event event);
     List<Event> getAllEvents();
 }
-
-// Interface for Event Management (Following Interface Segregation Principle)

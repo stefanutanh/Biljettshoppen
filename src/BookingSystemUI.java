@@ -21,7 +21,7 @@ class BookingSystemUI {
             System.out.print("Choose option: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Clear buffer
+            scanner.nextLine(); // Rensa buffer
 
             switch (choice) {
                 case 1:
@@ -59,7 +59,7 @@ class BookingSystemUI {
             System.out.print("Choose option: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Clear buffer
+            scanner.nextLine(); // Rensa buffer
 
             switch (choice) {
                 case 1:
@@ -118,7 +118,7 @@ class BookingSystemUI {
             System.out.print("Choose option: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Clear buffer
+            scanner.nextLine(); // Rensa buffer
 
             switch (choice) {
                 case 1:

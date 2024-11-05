@@ -5,7 +5,7 @@ class Booking {
     private int eventId;
     private String customerName;
     private int numberOfSeats;
-    private String seatType;  // "BENCH" or "FOLDABLE"
+    private String seatType;  // "BENCH" eller "FOLDABLE"
     private boolean isPaid;
     private LocalDateTime bookingTime;
 
