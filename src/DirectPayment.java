@@ -6,3 +6,4 @@ class DirectPayment implements PaymentProcessor {
         return true;
     }
 
+}
