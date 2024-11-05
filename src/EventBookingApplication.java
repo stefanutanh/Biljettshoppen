@@ -1,6 +1,6 @@
 public class EventBookingApplication {
     public static void main(String[] args) {
-        // Initialize the service with direct payment as default
+        // Initiera tjänsten med direktbetalning som standard
         EventBookingService bookingService = new EventBookingService(new DirectPayment());
 
         
@@ -11,10 +11,10 @@ public class EventBookingApplication {
         bookingService.addEvent(konsert);
         bookingService.addEvent(forelasning);
 
-        // Create admin with password "admin123"
+        // Skapa administratör med lösenord "admin123"
         Admin admin = new Admin("admin123");
 
-        // Create and start the UI
+        // Skapa och starta UI:t
         BookingSystemUI ui = new BookingSystemUI(bookingService, admin);
         ui.start();
     }

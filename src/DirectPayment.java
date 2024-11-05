@@ -1,8 +1,8 @@
 class DirectPayment implements PaymentProcessor {
     @Override
     public boolean processPayment(Booking booking, double amount) {
-        // Simple direct payment implementation
+        // Simpel implementation av direktbetalning
         booking.setPaid(true);
         return true;
     }
-}
+

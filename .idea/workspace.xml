@@ -5,26 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39841d0d-5f06-43de-834a-64fb7567e0b6" name="Changes" comment="DFDS">
-      <change afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookingManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookingSystemUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DirectPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventBookingApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventBookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InvoicePayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PaymentProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BuildingType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookingSystemUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingSystemUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DirectPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DirectPayment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PaymentMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Seat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SeatType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sittplats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicketSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventBookingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventBookingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventBookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventBookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +50,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Katarina",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/rezal/IdeaProjects/andra året/Biljettshoppen",
@@ -84,8 +73,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -98,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729158819448</updated>
       <workItem from="1729158820497" duration="1303000" />
+      <workItem from="1730812889743" duration="1053000" />
     </task>
     <task id="LOCAL-00001" summary="DFDS">
       <option name="closed" value="true" />

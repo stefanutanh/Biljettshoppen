@@ -4,19 +4,19 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.stream.Collectors;
 
-// Main service class (Following Single Responsibility Principle)
+// Main service klass (Följer Single Responsibility Principle)
 class EventBookingService implements EventManager, BookingManager {
     private List<Event> events = new ArrayList<>();
     private List<Booking> bookings = new ArrayList<>();
     private final PaymentProcessor paymentProcessor;
     private static final int MAX_SEATS_PER_BOOKING = 5;
 
-    // Constructor injection (Following Dependency Inversion Principle)
+    // Constructor-injektion (Följer Dependency Inversion Principle)
     public EventBookingService(PaymentProcessor paymentProcessor) {
         this.paymentProcessor = paymentProcessor;
     }
 
-    // Event Management methods
+    // Hanteringsmetoder för Event
     @Override
     public void addEvent(Event event) {
         events.add(event);
@@ -42,10 +42,10 @@ class EventBookingService implements EventManager, BookingManager {
         return new ArrayList<>(events);
     }
 
-    // Booking Management methods
+    // Hanteringsmetoder för Bokning (Booking)
     @Override
     public void createBooking(Booking booking) {
-        // Validate booking
+        // Validera bokning
         if (booking.getNumberOfSeats() > MAX_SEATS_PER_BOOKING) {
             throw new IllegalArgumentException("Cannot book more than 5 seats");
         }
@@ -59,11 +59,11 @@ class EventBookingService implements EventManager, BookingManager {
             throw new IllegalArgumentException("Not enough seats available");
         }
 
-        // Update available seats
+        // Uppdatera tillgängliga sittplatser
         event.setAvailableSeats(event.getAvailableSeats() - booking.getNumberOfSeats());
         bookings.add(booking);
 
-        // Schedule booking timeout
+        // Boka timeout för bokning
         scheduleBookingTimeout(booking);
     }
 
@@ -86,7 +86,7 @@ class EventBookingService implements EventManager, BookingManager {
                 .collect(Collectors.toList());
     }
 
-    // Helper methods
+    // Hjälpmetoder
     private Event findEvent(int eventId) {
         return events.stream()
                 .filter(e -> e.getId() == eventId)
