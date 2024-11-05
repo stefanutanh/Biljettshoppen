@@ -3,4 +3,3 @@ interface PaymentProcessor {
 }
 
 
-// Interface for Payment (Following Interface Segregation Principle)

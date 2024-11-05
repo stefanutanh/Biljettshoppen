@@ -7,4 +7,3 @@ interface EventManager {
     List<Event> getAllEvents();
 }
 
-// Interface for Event Management (Following Interface Segregation Principle)

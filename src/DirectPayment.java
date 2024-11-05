@@ -6,6 +6,3 @@ class DirectPayment implements PaymentProcessor {
         return true;
     }
 }
-
-
- //   implementation of payment processors (Following Open/Closed Principle)
