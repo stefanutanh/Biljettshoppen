@@ -6,3 +6,4 @@ interface EventManager {
     void updateEvent(Event event);
     List<Event> getAllEvents();
 
+}
